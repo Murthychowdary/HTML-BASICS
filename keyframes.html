@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		.move{
+width: 300px;
+height: 100px;
+background-color: red;
+position: relative;
+animation-name: mymove;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in;
+animation-delay: 1s;
+animation-direction: alternate;
+
+
+}
+
+@keyframes mymove{
+
+0%{
+	top:0;
+	left: 0;
+}
+25%{
+	top:0;
+	left: 500px;
+	width: 100px;
+	background-color: yellow;
+}
+50%{
+	top:500px;
+	left: 500px;
+}
+
+75%{
+	top: 500px;
+	left: 0;
+}
+
+100%{
+	top:0;
+	left: 0
+}
+
+}
+
+	</style>
+</head>
+<body>
+
+<div class="move">
+	
+
+
+</div>
+
+
+</body>
+</html>
