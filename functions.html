@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function msg(){
+			alert("t5his is satya");
+		}
+	</script>
+<input type="button" onclick="msg()" value="call function">
+<script>  
+emp={id:102,name:"Shyam Kumar",salary:40000}  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+</script>
+<script>  
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+</script> <br>
+<script>  	
+var emp=["Sonoo","Vimal","Ratan"];  
+for (i=0;i<emp.length;i++){  	
+document.write(emp[i] + "<br/>");  
+}  
+</script>  
+<b>
+	<script>  
+var i;  
+var emp = new Array();  
+emp[0] = "Arun";  
+emp[1] = "Varun";  
+emp[2] = "John";    
+for (i=0;i<emp.length;i++){  
+document.write(emp[i] + "<br>");  
+}  
+</script>  
+<br>
+<span id="msg">  </span>
+
+<script>
+  
+function getTime(){
+  var today = new Date();
+  var h  = today.getHours();
+  var m = today.getMinutes();
+  var s= today.getSeconds();
+
+document.getElementById('msg').innerHTML= h +":" + m +":" + s;
+
+  // document.write(h+"/"+m+"/"+s); //comment
+
+  setInterval("getTime()",1000) // Two parameters calling now 
+
+}
+
+getTime();
+
+
+</script>  
+
+ 
+</body>
+</html>

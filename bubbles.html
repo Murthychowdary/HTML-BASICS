@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bubbles</title>
+	<link rel="stylesheet" type="text/css" href="css/satya.css">
+</head>
+<body>
+<section>
+	<h2>BUBBLES</h2>
+	<script type="text/javascript">
+		function createBubble(){
+			const section = document.queryselector(section)
+			const createElement = document.createElement('span')
+			var size = Math.random() * 60;
+
+			createElement.style.width = size + 'px';
+			createElement.style.height = size + 'px';
+			createElement.style.left = Math.random() * innerwidth + "px";
+			section.appendchild(createElement);
+			setTimeout(() => 
+				{
+					createElement.remove()
+				},4000)
+		}
+		setInterval(createBubble,50)
+	</script>
+</section>
+</body>
+</html>
